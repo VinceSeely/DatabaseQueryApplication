@@ -1,0 +1,11 @@
+J:\Database\DatabaseInteractionForm\DatabaseInteractionForm\bin\Debug\DatabaseInteractionForm.exe.config
+J:\Database\DatabaseInteractionForm\DatabaseInteractionForm\bin\Debug\DatabaseInteractionForm.exe
+J:\Database\DatabaseInteractionForm\DatabaseInteractionForm\bin\Debug\DatabaseInteractionForm.pdb
+J:\Database\DatabaseInteractionForm\DatabaseInteractionForm\bin\Debug\DatabaseInteractionForm.xml
+J:\Database\DatabaseInteractionForm\DatabaseInteractionForm\obj\Debug\DatabaseInteractionForm.vbprojResolveAssemblyReference.cache
+J:\Database\DatabaseInteractionForm\DatabaseInteractionForm\obj\Debug\DatabaseInteractionForm.FormLogin.resources
+J:\Database\DatabaseInteractionForm\DatabaseInteractionForm\obj\Debug\DatabaseInteractionForm.Resources.resources
+J:\Database\DatabaseInteractionForm\DatabaseInteractionForm\obj\Debug\DatabaseInteractionForm.vbproj.GenerateResource.Cache
+J:\Database\DatabaseInteractionForm\DatabaseInteractionForm\obj\Debug\DatabaseInteractionForm.exe
+J:\Database\DatabaseInteractionForm\DatabaseInteractionForm\obj\Debug\DatabaseInteractionForm.xml
+J:\Database\DatabaseInteractionForm\DatabaseInteractionForm\obj\Debug\DatabaseInteractionForm.pdb
