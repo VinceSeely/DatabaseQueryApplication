@@ -1,4 +1,6 @@
-﻿Public Class Oracle
+﻿Imports DatabaseInteractionForm
+
+Public Class Oracle
    Friend Shared UserName As String
    Friend Shared PassWd As String
    Friend Shared Server As String
@@ -8,8 +10,16 @@
    Friend Shared myOracleCommand As New System.Data.OracleClient.OracleCommand
    Friend Shared myOracleConnection As New System.Data.OracleClient.OracleConnection
    Friend Shared myOracleCommandBuilder As System.Data.OracleClient.OracleCommandBuilder
-
+   Friend Shared frmLogin As New FormLogin
+   Private Shared frmBooking As New frmBooking
    Friend Shared myTable As New System.Data.DataTable
+   Friend Shared Result As ResponseType
+   Public Enum ResponseType
+      OK
+      Cancel
+   End Enum
+
+
 
    Public Shared Sub LogInAtRunTime()
 
@@ -26,9 +36,25 @@
    End Sub
 
    Public Shared Sub main()
-      LogInAtRunTime()
+      Dim connected As Boolean
 
-      Application.Run(New Form1)
+      While Not connected
+         frmLogin.ShowDialog()
+         If Result = ResponseType.Cancel Then
+            Exit While
+         End If
+
+         Try
+            LogInAtRunTime()
+            connected = True
+         Catch ex As Exception
+            MessageBox.Show(ex.Message)
+         End Try
+      End While
+
+      If connected Then
+         Application.Run(frmBooking)
+      End If
    End Sub
 
 End Class

@@ -22,8 +22,8 @@ Partial Class FormLogin
    'Do not modify it using the code editor.
    <System.Diagnostics.DebuggerStepThrough()> _
    Private Sub InitializeComponent()
-      Me.Button1 = New System.Windows.Forms.Button()
-      Me.Button2 = New System.Windows.Forms.Button()
+      Me.LoginButton = New System.Windows.Forms.Button()
+      Me.CancelButton = New System.Windows.Forms.Button()
       Me.TextBox1 = New System.Windows.Forms.TextBox()
       Me.TextBox2 = New System.Windows.Forms.TextBox()
       Me.TextBox3 = New System.Windows.Forms.TextBox()
@@ -32,26 +32,27 @@ Partial Class FormLogin
       Me.Label3 = New System.Windows.Forms.Label()
       Me.SuspendLayout()
       '
-      'Button1
+      'LoginButton
       '
-      Me.Button1.Location = New System.Drawing.Point(45, 210)
-      Me.Button1.Name = "Button1"
-      Me.Button1.Size = New System.Drawing.Size(75, 23)
-      Me.Button1.TabIndex = 0
-      Me.Button1.Text = "Login"
-      Me.Button1.UseVisualStyleBackColor = True
+      Me.LoginButton.Location = New System.Drawing.Point(45, 210)
+      Me.LoginButton.Name = "LoginButton"
+      Me.LoginButton.Size = New System.Drawing.Size(75, 23)
+      Me.LoginButton.TabIndex = 0
+      Me.LoginButton.Text = "Login"
+      Me.LoginButton.UseVisualStyleBackColor = True
       '
-      'Button2
+      'CancelButton
       '
-      Me.Button2.Location = New System.Drawing.Point(156, 210)
-      Me.Button2.Name = "Button2"
-      Me.Button2.Size = New System.Drawing.Size(75, 23)
-      Me.Button2.TabIndex = 1
-      Me.Button2.Text = "Cancel"
-      Me.Button2.UseVisualStyleBackColor = True
+      Me.CancelButton.Location = New System.Drawing.Point(156, 210)
+      Me.CancelButton.Name = "CancelButton"
+      Me.CancelButton.Size = New System.Drawing.Size(75, 23)
+      Me.CancelButton.TabIndex = 1
+      Me.CancelButton.Text = "Cancel"
+      Me.CancelButton.UseVisualStyleBackColor = True
       '
       'TextBox1
       '
+      Me.TextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
       Me.TextBox1.Location = New System.Drawing.Point(109, 53)
       Me.TextBox1.Name = "TextBox1"
       Me.TextBox1.Size = New System.Drawing.Size(100, 20)
@@ -67,6 +68,7 @@ Partial Class FormLogin
       '
       'TextBox3
       '
+      Me.TextBox3.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
       Me.TextBox3.Location = New System.Drawing.Point(109, 150)
       Me.TextBox3.Name = "TextBox3"
       Me.TextBox3.Size = New System.Drawing.Size(100, 20)
@@ -110,8 +112,8 @@ Partial Class FormLogin
       Me.Controls.Add(Me.TextBox3)
       Me.Controls.Add(Me.TextBox2)
       Me.Controls.Add(Me.TextBox1)
-      Me.Controls.Add(Me.Button2)
-      Me.Controls.Add(Me.Button1)
+      Me.Controls.Add(Me.CancelButton)
+      Me.Controls.Add(Me.LoginButton)
       Me.Name = "FormLogin"
       Me.Text = "Form1"
       Me.ResumeLayout(False)
@@ -119,8 +121,8 @@ Partial Class FormLogin
 
    End Sub
 
-   Friend WithEvents Button1 As Button
-   Friend WithEvents Button2 As Button
+   Friend WithEvents LoginButton As Button
+   Friend WithEvents CancelButton As Button
    Friend WithEvents TextBox1 As TextBox
    Friend WithEvents TextBox2 As TextBox
    Friend WithEvents TextBox3 As TextBox

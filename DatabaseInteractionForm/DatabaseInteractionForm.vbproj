@@ -6,11 +6,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{477E10F9-8307-4210-8D45-07F2372D5050}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>DatabaseInteractionForm.My.MyApplication</StartupObject>
+    <StartupObject>Sub Main</StartupObject>
     <RootNamespace>DatabaseInteractionForm</RootNamespace>
     <AssemblyName>DatabaseInteractionForm</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MyType>WindowsForms</MyType>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmBooking.Designer.vb">
+      <DependentUpon>frmBooking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBooking.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Oracle.vb" />
     <Compile Include="FormLogin.vb">
       <SubType>Form</SubType>
@@ -98,6 +104,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmBooking.resx">
+      <DependentUpon>frmBooking.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.vb</DependentUpon>
     </EmbeddedResource>

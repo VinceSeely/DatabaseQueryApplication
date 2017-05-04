@@ -9,3 +9,4 @@ J:\Database\DatabaseInteractionForm\DatabaseInteractionForm\obj\Debug\DatabaseIn
 J:\Database\DatabaseInteractionForm\DatabaseInteractionForm\obj\Debug\DatabaseInteractionForm.exe
 J:\Database\DatabaseInteractionForm\DatabaseInteractionForm\obj\Debug\DatabaseInteractionForm.xml
 J:\Database\DatabaseInteractionForm\DatabaseInteractionForm\obj\Debug\DatabaseInteractionForm.pdb
+J:\Database\DatabaseInteractionForm\DatabaseInteractionForm\obj\Debug\DatabaseInteractionForm.frmBooking.resources
